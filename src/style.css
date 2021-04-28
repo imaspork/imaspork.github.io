@@ -1,0 +1,232 @@
+*, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+a, a:visited {
+    text-decoration: none;
+    color:inherit;
+    
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #41B3a3
+}
+h1 {
+    color: #E8A87C;
+}
+/* HOME PAGE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#portfolio-page, #home-page{
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+            -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+    
+}
+#tyler-header {
+    color: white;
+    font-size: 3em;
+    text-align:center;
+}
+#tyler-webdev-subtitle {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 300;
+    border-bottom: 1px solid white;
+    padding-top: .2em;
+    text-align:center;
+}
+#home {
+    opacity: 1;
+    transition: opacity 500ms linear;
+}
+#portrait-wrapper {
+    display:flex; 
+    justify-content: center;
+    padding-top: 1em;
+}
+#portrait {
+    width: auto; 
+    height: 40%;
+    border-radius: 50%; 
+    border: 5px solid #C38D9E;
+    content:url(../public/tyler.png);
+}
+#intro-column-one {
+    display:flex; 
+    flex-direction:column;
+    width:100%
+}
+
+#intro-column-two {
+    display:flex; 
+    flex-direction:column;
+    width:100%
+}
+
+/* STYLING CLASSES */
+.center-content-responsive {
+    display:flex; 
+    justify-content: center;
+    padding-top: 1em;
+}
+.white {
+    color: white;
+}
+
+
+.center-text {
+    text-align:center;
+}
+
+.center-content-column-responsive {
+    display: flex; 
+    flex-direction:column; 
+    padding: 1em;
+}
+
+.language-styling {
+    width:4em;
+    padding-right: 1em;
+}
+
+.list-styling {
+    padding: 1em;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.s-padding {
+    padding:1em;
+}
+
+.language-bold-orange {
+    color:#E8A87C;
+}
+
+.language-bold-red {
+    color: #C38D9E
+}
+/* STYLING CLASSES END ~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* BUTTONS */
+.clickable {
+    border-bottom: 2px solid #E27D60;
+}
+.button-wrapper {
+    display:flex; 
+    justify-content:center;
+    padding-bottom:5em;
+}
+.button-styling {
+    background-color: #E27D60;
+    border: none;
+    padding: 1em;
+    color: #85DCBE;
+    text-decoration: none;
+    font-weight: 600;
+}
+.button-styling:active {
+    border: 4px solid #C38D9E;
+    opacity: .5;
+}
+.button-styling:hover {
+    border-right: 10px solid #E27D60;
+    border-left: 10px solid #E27D60;
+    transition:all .3s ease-in-out;
+    
+}
+/* BUTTONS END */
+
+/* MEDIA QUERIES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* QUERIES LESS THAN 600 */
+@media only screen and (min-width: 600px) {
+    #portrait {
+        width: 15em;
+        height: 15em;
+    }
+
+    
+}
+/* QUERIES LESS THAN 850 */
+@media only screen and (min-width: 850px) {
+    #top-cell-wrapper {
+        display:flex;
+        justify-content:space-around;
+        width: 100%;
+        
+    
+    }
+    #intro-column {
+        display:flex;
+        justify-content:space-between;
+        width: 100%;
+    }
+    #portrait {
+        content:url('../public/tylerbig.png');
+        border-radius: 0%; 
+        width: 80%;
+        height: 80%;
+    }
+    #intro-column-one {
+        display:flex; 
+        flex-direction:column;
+        width:45%
+    }
+    
+    #intro-column-two {
+        display:flex; 
+        flex-direction:column;
+        width:45%
+    }
+    
+}
+/* QUERIES LESS THAN 1200 */
+@media only screen and (min-width: 1200px) {
+    #portrait {
+        width: 15em;
+        height: 15em;
+    }
+    
+
+
+    
+}
+/* MEDIA QUERIES END~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* ANIMATIONS */
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
