@@ -272,6 +272,34 @@ h1 {
         padding-bottom: 4em;
         padding-top: 2em;
     }
+    #text-wrapper {
+        padding-top: 10em;
+    }
 
 }
 
+@media only screen and (max-width: 415px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    #nav-links {
+        font-size: 1rem;
+    }
+    .thin-h1 {
+        padding-top: 1em;
+    }
+
+}
+@media only screen and (max-width: 355px) {
+    
+
+}
+@media only screen and (max-height: 560px) {
+    #text-wrapper {
+        padding-top: 4em;
+    }
+    .name-styling {
+        padding-bottom: 2em;
+    }
+
+}
